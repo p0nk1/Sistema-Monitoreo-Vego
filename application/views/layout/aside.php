@@ -64,9 +64,9 @@
                                    <li>
                                 <a href="<?= base_url('index.php/c_graficas_agro');?>">Estaditicas</a>
                             </li>
-                           <!-- <li>
+                            <!--li>
                                 <a href="<?= base_url('index.php/C_registro_agro');?>">Registros Agro Productivo</a>
-                            </li>-->
+                            </li-->
                             <li>
                                 <a href="<?= base_url('index.php/c_agroproductivo');?>">Listado General de Registros</a>
                             </li>
