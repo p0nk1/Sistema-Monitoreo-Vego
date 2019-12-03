@@ -20,13 +20,13 @@
                     <?php if ($this->session->userdata('nivel_usuario') =='2' || $this->session->userdata('nivel_usuario')=='3' || $this->session->userdata('nivel_usuario')=='4'): ?>
                              <li >
                                 <a href="<?= base_url('index.php/c_jornadas');?>">
-                                    <i class="material-icons">timeline</i>
+                                    <i class="material-icons">show_chart</i>
                                     <span>Graficas</span>
                                 </a>
                             </li>
                             <li >
                                 <a href="<?= base_url('index.php/c_principal');?>">
-                                    <i class="material-icons">perm_device_information</i>
+                                    <i class="material-icons">dashboard</i>
                                     <span>Tablero</span>
                                 </a>
                             </li>
@@ -40,7 +40,7 @@
                             </li>
                         <li >
                                 <a href="<?= base_url('index.php/c_principal');?>">
-                                    <i class="material-icons">perm_device_information</i>
+                                    <i class="material-icons">dashboard</i>
                                     <span>Tablero</span>
                                 </a>
                             </li>
@@ -173,12 +173,13 @@
                     <?php if ($this->session->userdata('nivel_usuario') =='2' || $this->session->userdata('nivel_usuario')=='3' || $this->session->userdata('nivel_usuario')=='4' ) : ?>
                         <li>
                         <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">widgets</i>
+                            <i class="material-icons">settings_applications</i>
                             <span>Configuracion</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
                                 <a href="javascript:void(0);" class="menu-toggle">
+                                <i class="material-icons">supervised_user_circle</i>
                                     <span>Usuarios</span>
                                 </a>
                                 <ul class="ml-menu">
@@ -222,7 +223,7 @@
             </div>
             <div class="legal">
                 <div class="copyright">
-                    <span class="copy-left">&copy;</span> 2019 <a href="#">Gran Mision Saber y Trabajo</a>.
+                    <span class="copy-left">&copy;</span> 2019 Desarrollado por:<a href="https://www.linkedin.com/in/alonsoalvarino/">Alonso Alvarino</a>.
                 </div>
                 <div class="version">
                     <b>Version: </b> 1.0
