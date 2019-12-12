@@ -48,12 +48,12 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
-                            <li class="nav-item"><a class="nav-link link text-black display-4" href="index.html#slider1-a"><span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>Inicio</a></li>
-                            <!--li class="nav-item"><a class="nav-link link text-black display-4" href="index.html#services2-16">Planes</a></li>
-                            <li class="nav-item"><a class="nav-link link text-white display-4" href="index.html#services2-19">Noticias</a></li>
+                            <li class="nav-item"><a class="nav-link link text-white display-4" href="index.html#slider1-a"><span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link link text-white display-4" href="http://localhost/Sistema-Monitoreo-Vego/Sistema"><span class="mbri-laptop mbr-iconfont mbr-iconfont-btn"></span>Sistema CoVeGo</a></li>
+                            <!--li class="nav-item"><a class="nav-link link text-white display-4" href="index.html#services2-19">Noticias</a></li>
                             <li class="nav-item"><a class="nav-link link text-white display-4" href="index.html#features18-1s">Trabajadores</a></li>
                             <li class="nav-item"><a class="nav-link link text-white display-4" href="index.html#services2-1w">Ofertas de Empleo</a></li>
-                            <li class="nav-item"><a class="nav-link link text-black display-4" href="index.html#footer2-1q">Contáctanos</a></li-->
+                            <li class="nav-item"><a class="nav-link link text-white display-4" href="index.html#footer2-1q">Contáctanos</a></li-->
                         </ul>
                 </div>
             </nav>
@@ -64,25 +64,25 @@
             <br><br>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="title col-12 col-lg-8"><h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">Micro Misión Productiva.</h2></div>
+                    <div class="title col-12 col-lg-8"><h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">Registro Gas Vereda Gómez.</h2></div>
                 </div>
             </div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="media-container-column col-lg-8" >
                         <div data-form-alert="" hidden="">Thanks for filling out the form!</div>
-                        <form class="mbr-form" action="controler/registro_agro.php" method="POST">
+                        <form class="mbr-form" action="controler/registro_gas.php" method="POST">
                             <div class="row row-sm-offset">
                                 <div class="col-md-6 multi-horizontal" >
                                     <div class="form-group">
                                         <label class="form-control-label mbr-fonts-style display-7" >Cédula</label>
-                                        <input type="text" class="form-control" name="cedula" ng-model="cedula" data-form-field="Name" required >
+                                        <input type="text" class="form-control" name="cedula" ng-model="cedula" data-form-field="Name" placeholder="Ej:12345678" required >
                                     </div>
                                 </div>
                                 <div class="col-md-6 multi-horizontal" >
                                     <div class="form-group">
                                         <label class="form-control-label mbr-fonts-style display-7" for="email-form1-t">Nombres</label>
-                                        <input type="text" class="form-control" name="nombre"  required>
+                                        <input type="text" class="form-control" name="nombre" placeholder="Escriba su nombre" required>
                                     </div>
                                 </div>   
                             </div>
@@ -90,7 +90,7 @@
                                 <div class="col-md-6 multi-horizontal" >
                                     <div class="form-group">
                                         <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-t">Apellidos</label>
-                                        <input type="text" class="form-control" name="apellido" required>
+                                        <input type="text" class="form-control" name="apellido" placeholder="Escriba su apellido" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 multi-horizontal" >
@@ -113,27 +113,27 @@
                                 <div class="col-md-6 multi-horizontal" >
                                     <div class="form-group">
                                         <label class="form-control-label mbr-fonts-style display-7" for="name-form1-t">Teléfono</label>
-                                        <input type="text" class="form-control" name="telefono"  required>
+                                        <input type="text" class="form-control" name="telefono" placeholder="Ej:04161234567" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row row-sm-offset">
                                 <div class="col-md-6     multi-horizontal" >
                                     <div class="form-group">
-                                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-t">Email</label>
-                                        <input type="text" class="form-control" name="email" required>
+                                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-t">Email / Correo</label>
+                                        <input type="text" class="form-control" name="email" placeholder="Ej:email@correo.com" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 multi-horizontal" >
                                     <div class="form-group">
-                                          <label class="form-control-label mbr-fonts-style display-7" >Razón Social</label>
+                                          <label class="form-control-label mbr-fonts-style display-7" >Jerarquía Familiar</label>
                                         <select  class="form-control" name="r_social" required="">
                                             <option value="0">Seleccione</option>
-                                            <option value="PERSONAL">Personal</option>
-                                            <option value="EPS">Empresa de Produccion Social</option>
-                                            <option value="UPF">Unidad de Produccion Familiar</option>
+                                            <option value="JEFE FAMILIA">Jefe de Familia</option>
+                                            <option value="CARGA FAMILIAR">Carga Familiar</option>
+                                            <!--option value="UPF">Unidad de Produccion Familiar</option>
                                             <option value="COOPERATIVA">Cooperativa</option>
-                                            <option value="CA">Compañia Anonima</option>
+                                            <option value="CA">Compañia Anonima</option-->
                                         </select>
                                     </div>
                                 </div>
@@ -145,13 +145,13 @@
                                         <label class="form-control-label mbr-fonts-style display-7" for="name-form1-t">Estado</label>
                                         <select class="form-control" id="cbx_estado"  required name="estado">
                                                 <option value="0">Seleccionar Estado</option>
-                                                <option value="1">Amazonas</option>
+                                                <!--option value="1">Amazonas</option>
                                                 <option value="2">Anzoategui</option>
                                                 <option value="3">Apure</option>
                                                 <option value="4">Aragua</option>
                                                 <option value="5">Barinas</option>
                                                 <option value="6">Bolivar</option>
-                                                <option value="7">Carabobo</option-->
+                                                <option value="7">Carabobo</option>
                                                 <option value="8">Cojedes</option>
                                                 <option value="9">Delta Amacuro</option>
                                                 <option value="10">Falcón</option>
@@ -167,15 +167,15 @@
                                                 <option value="20">Trujillo</option>
                                                 <option value="21">Vargas</option>
                                                 <option value="22">Yaracuy</option>
-                                                <option value="23">Zulia</option>
-                                                <option value="24">Distrito Capital</option-->
+                                                <option value="23">Zulia</option-->
+                                                <option value="24">Distrito Capital</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-4 multi-horizontal" >
                                     <div class="form-group">
                                         <label class="form-control-label mbr-fonts-style display-7" for="email-form1-t">Municipio</label>
-                                        <select class="form-control" id="cbx_municipio"  name="municipio" required ">
+                                        <select class="form-control" id="cbx_municipio"  name="municipio" required>
                                             <option value="">- Seleccione -</option>
                                         </select>
                                     </div>
@@ -193,88 +193,102 @@
                                 <div class="col-md-4 multi-horizontal" >
                                     <div class="form-group">
                                         <label class="form-control-label mbr-fonts-style display-7" >Localidad</label>
-                                        <select  class="form-control" name="localidad" required="">
+                                        <select  class="form-control" name="localidad" required>
                                             <option value="0">Seleccione</option>
-                                            <option value="URBANISMO GMVV">Urbanismo GMVV</option>
-                                            <option value="BARRIO">Barrio</option>
-                                            <option value="CASERIO">Caserio</option>
-                                            <option value="URBANIZACION">Urbanizacion</option>
-                                            <option value="CONJUNTO RESIDENCIAL">Conjunto Residencial</option>
+                                            <option value="UEPA">Calle UEPA</option>
+                                            <option value="SUBIDA GALIPAN">Subida Galipan</option>
+                                            <option value="PATIO CENTRAL">Patio Central</option>
+                                            <option value="ESCALERA UNO">Escalera 1</option>
+                                            <option value="ESCALERA DOS">Escalera 2</option>
+                                            <option value="ESCALERA TRES">Escalera 3</option>
+                                            <option value="ESCALERA CUATRO">Escalera 4</option>
+                                            <option value="ESCALERA CINCO">Escalera 5</option>
+                                            <option value="ESCALERA SEIS">Escalera 6</option>
+                                            <option value="ESCALERA SIETE">Escalera 7</option>
+                                            <option value="ESCALERA OCHO">Escalera 8</option>
+                                            <!--option value="URBANIZACION">Urbanizacion</option>
+                                            <option value="CONJUNTO RESIDENCIAL">Conjunto Residencial</option-->
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-8 multi-horizontal" >
                                     <div class="form-group">
-                                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-t">Nombre de la Localidad</label>
-                                        <input type="text" class="form-control" name="n_localidad" required>
+                                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-t">Dirección exacta</label>
+                                        <input type="text" class="form-control" name="direccion" placeholder="Escriba la dirección de su vivienda" required>
+                                        <!--label class="form-control-label mbr-fonts-style display-7" for="phone-form1-t">Nombre de la Localidad</label>
+                                        <input type="text" class="form-control" name="n_localidad" required-->
                                     </div>
                                 </div>
                             </div>
-                            <div class="row row-sm-offset">
+                            <!--div class="row row-sm-offset">
                                 <div class="col-md-12 multi-horizontal" >
                                     <div class="form-group">
                                         <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-t">Dirección exacta</label>
                                         <input type="text" class="form-control" name="direccion" required>
                                     </div>
                                 </div>
-                            </div>
+                            </div-->
                             <hr>
                             <div class="row row-sm-offset">
                                 <div class="col-md-6 multi-horizontal" >
                                     <div class="form-group">
-                                        <label class="form-control-label mbr-fonts-style display-7" >¿Trabaja actualmente?</label>
+                                        <label class="form-control-label mbr-fonts-style display-7" >¿Tipo de Gas que posee?</label>
                                         <select  class="form-control" name="trabaja" required="">
-                                            <option value="SI">Si</option>
-                                            <option value="NO">No</option> 
+                                            <option value="0">Seleccione</option>
+                                            <option value="AUTOGAS">Autogas</option>
+                                            <option value="GASCCS">Gas Caracas</option>
+                                            <option value="TROPIVEN">Tropiven</option>
+                                            <option value="PDVSAGAS">PDVSA Gas</option> 
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6 multi-horizontal" >
                                     <div class="form-group">
-                                        <label class="form-control-label mbr-fonts-style display-7" >Grado de instrucción</label>
+                                        <label class="form-control-label mbr-fonts-style display-7" >Tipo de Boquilla</label>
                                         <select  class="form-control" name="g_instruccion" required="">
-                                            <option value="PRIMARIA">Primaria</option>
-                                            <option value="BASICA">Basica</option>
-                                            <option value="BACHILLER">Bachiller</option>
-                                            <option value="TECNICA">Tecnica</option>
-                                            <option value="UNIVERSITARIA">Universitaria</option>
+                                            <option value="0">Seleccione</option>
+                                            <option value="BOCA PEQUEÑA">Boca Pequeña</option>
+                                            <option value="BOCA GRANDE">Boca Grande</option>
+                                            <option value="ROSCA">Rosca</option>
+                                            <!--option value="TECNICA">Tecnica</option>
+                                            <option value="UNIVERSITARIA">Universitaria</option-->
                                         </select>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row row-sm-offset">
+                            <!--div class="row row-sm-offset">
                                 <div class="col-md-12 multi-horizontal" >
                                     <div class="form-group">
                                         <label class="form-control-label mbr-fonts-style display-7" >¿Profesión u Oficio?</label>
                                         <input type="text" class="form-control" name="profesion" required="">
                                     </div>
                                 </div>
-                            </div>
+                            </div-->
                             <div class="row row-sm-offset">
                                 <div class="col-md-6 multi-horizontal" >
                                     <div class="form-group">
-                                        <label class="form-control-label mbr-fonts-style display-7" >Espacio de la revolución en su punto y círculo</label>
+                                        <label class="form-control-label mbr-fonts-style display-7" >Peso de la Bombona</label>
                                         <select  class="form-control" name="e_social" required="">
                                             <option value="0">Seleccione</option>
-                                            <option value="BASE DE MISIONES">Base de Misiones</option>
-                                            <option value="CDI">Centro de Diagnostico Integral</option>
-                                            <option value="CASAS DE ALIMENTACION">Casas de Alimentacion</option>
-                                            <option value="MATERNAL">Maternal</option>
+                                            <option value="10 KGS">10 Kilos</option>
+                                            <option value="18 KGS">18 Kilos</option>
+                                            <option value="42 KGS">42 Kilos</option>
+                                            <!--option value="MATERNAL">Maternal</option>
                                             <option value="ESCUELA">Escuela</option>
                                             <option value="LICEO">Liceo</option>
                                             <option value="UNIVERSIDAD">Universidad</option>
-                                            <option value="ALDEA UNIVERSITARIA">Aldea Universitaria</option> 
+                                            <option value="ALDEA UNIVERSITARIA">Aldea Universitaria</option--> 
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6 multi-horizontal" >
                                     <div class="form-group">
-                                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-t">Nombre del Espacio Social</label>
-                                        <input type="text" class="form-control" name="n_social" required>
+                                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-t">¿Cantidad de Bombonas que posee?</label>
+                                        <input type="text" class="form-control" name="n_social" placeholder="Introduzca un número" required>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row row-sm-offset">
+                            <!--div class="row row-sm-offset">
                                 <div class="col-md-12 multi-horizontal" >
                                     <div class="form-group">
                                         <label class="form-control-label mbr-fonts-style display-7" >Movimiento social o partido político pertenece</label>
@@ -296,7 +310,7 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div>
+                            </div-->
                             <hr>
                             <div class="row row-sm-offset">
                                 <div class="container">

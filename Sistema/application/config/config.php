@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 //$config['base_url'] = 'http://portal.gmsaberytrabajo.gob.ve/monitoreo/';
 //$config['base_url'] = 'http://sistema.gmsaberytrabajo.gob.ve/monitoreo/';
-$config['base_url'] = 'http://localhost/Sistema-Monitoreo-Vego/';
+$config['base_url'] = 'http://localhost/Sistema-Monitoreo-Vego/Sistema';
 /*
 |--------------------------------------------------------------------------
 | Index File
