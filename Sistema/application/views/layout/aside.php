@@ -48,7 +48,7 @@
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">assignment</i>
-                            <span>Gestion Productiva</span>
+                            <span>Gestión de Gas</span>
                         </a>
 
                         <ul class="ml-menu">
@@ -74,7 +74,7 @@
                             
                         </ul>
                     </li>
-                     <li>
+                     <!--li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">assignment</i>
                             <span>Programa Asesorate</span>
