@@ -29,7 +29,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <div class="card">
                         <div class="header">
                             <h2>
-                                Listado de Personas Registradas en el Programa Agropoductivo
+                                Listado de Personas Registradas en el Gas Comunal
                             </h2>
                             <hr>
 
@@ -117,7 +117,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         </div>
                         <div class="body">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-striped table-hover dataTable js-exportable" ">
+                                <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                                     <thead>
                                         <tr>
                                             <th scope=" col" style="font-family: 'Dancing Script', cursive;">Cedula</th>
@@ -127,17 +127,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     <th scope="col" style="font-family: 'Dancing Script', cursive;">Fecha de Nacimiento</th>
                                     <th scope="col" style="font-family: 'Dancing Script', cursive;">Telefono</th>
                                     <th scope="col" style="font-family: 'Dancing Script', cursive;">Email</th>
-                                    <th scope="col" style="font-family: 'Dancing Script', cursive;">Estado</th>
-                                    <th scope="col" style="font-family: 'Dancing Script', cursive;">Municipio</th>
-                                    <th scope="col" style="font-family: 'Dancing Script', cursive;">Parroquia</th>
                                     <th scope="col" style="font-family: 'Dancing Script', cursive;">Localidad</th>
                                     <th scope="col" style="font-family: 'Dancing Script', cursive;">Direccion</th>
-                                    <th scope="col" style="font-family: 'Dancing Script', cursive;">Espacio Social</th>
-                                    <th scope="col" style="font-family: 'Dancing Script', cursive;">Movimiento</th>
-                                    <th scope="col" style="font-family: 'Dancing Script', cursive;">Grado Instruccion</th>
-                                    <th scope="col" style="font-family: 'Dancing Script', cursive;">Oficio</th>
-                                    <th scope="col" style="font-family: 'Dancing Script', cursive;">Trabaja</th>
-                                    <th scope="col" style="font-family: 'Dancing Script', cursive;">Pertenece</th>
+                                    <th scope="col" style="font-family: 'Dancing Script', cursive;">Peso Bombona</th>
+                                    <th scope="col" style="font-family: 'Dancing Script', cursive;">Cantidad</th>
+                                    <th scope="col" style="font-family: 'Dancing Script', cursive;">Tipo de Boca</th>
+                                    <th scope="col" style="font-family: 'Dancing Script', cursive;">Tipo de Gas</th>
                                     <th scope="col" style="font-family: 'Dancing Script', cursive;">Acciones</th>
 
                                     </tr>
@@ -154,17 +149,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                                 <td><?php echo strtolower($listar->f_nacimiento); ?></td>
                                                 <td><?php echo strtolower($listar->telefono); ?></td>
                                                 <td><?php echo strtolower($listar->email); ?></td>
-                                                <td><?php echo strtolower($listar->estado); ?></td>
-                                                <td><?php echo strtolower($listar->municipio); ?></td>
-                                                <td><?php echo strtolower($listar->parroquia); ?></td>
-                                                <td><?php echo strtolower($listar->nombre_localidad); ?></td>
+                                                <td><?php echo strtolower($listar->localidad); ?></td>
                                                 <td><?php echo strtolower($listar->direccion_exacta); ?></td>
-                                                <td><?php echo strtolower($listar->e_social); ?></td>
-                                                <td><?php echo strtolower($listar->movimiento); ?></td>
-                                                <td><?php echo strtolower($listar->grado_instruccion); ?></td>
-                                                <td><?php echo strtolower($listar->profesion_oficio); ?></td>
-                                                <td><?php echo strtolower($listar->trabaja); ?></td>
-                                                <td><?php echo strtolower($listar->planes); ?></td>
+                                                <td><?php echo strtolower($listar->peso_bomba); ?></td>
+                                                <td><?php echo strtolower($listar->cant_bomba); ?></td>
+                                                <td><?php echo strtolower($listar->tipo_boca); ?></td>
+                                                <td><?php echo strtolower($listar->tipo_gas); ?></td>
                                                 <td> <button id="btnEditar<?php echo $listar->id_persona ?>" onclick="ireditar('<?php echo $listar->id_persona ?>')" data-editable="false" data-id="<?php echo $listar->id_persona ?>" class="btn-sm btn-primary btnEditar"> <i class="material-icons" id="icon<?php echo $listar->id_persona ?>">create</i></button>
                                                     <button id="btnEliminar<?php echo $listar->id_persona ?>" onclick="eliminar('<?php echo $listar->id_persona ?>')" data-editable="false" data-id="<?php echo $listar->id_persona ?>" class="btn-sm btn-danger btnEditar"> <i class="material-icons" id="icon<?php echo $listar->id_persona ?>">delete</i></button> </td>
 

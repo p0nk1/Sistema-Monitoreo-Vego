@@ -40,18 +40,18 @@ public function setDesdeHasta($desde, $hasta){
         $insert   =  $this->db->insert('contacto',$datos);
             if (!$insert) {
                     echo ' <script>  
-                            alert("Erro al Registar Usuario");
+                            alert("Error al Registar Usuario");
                             document.location.href = "'.base_url().'"; 
                         </script>';
                 } else {
                     echo ' <script>  
-                            alert("El Registro en la Unidad de Acompañamiento Agro Productivo fue Completado con Exito");
+                            alert("El Registro fue Completado con Exito");
                             document.location.href = "'.base_url('index.php/C_registro_agro').'"; 
                             </script>';
                 }
         }else{
                             echo ' <script>  
-                                    alert("Erro al Registar Usuario");
+                                    alert("Error al Registar Usuario");
                                     document.location.href = "'.base_url().'"; 
                                   </script>';
                           }         
@@ -405,46 +405,30 @@ personas.id_persona,
   personas.sexo, 
   personas.f_nacimiento, 
   direccion.localidad, 
-  direccion.nombre_localidad, 
   direccion.direccion_exacta, 
-  estados.estado, 
-  municipios.municipio, 
-  parroquias.parroquia, 
   planes_personas.fecha_registro, 
-  espacio_politico.e_social, 
-  espacio_politico.n_social, 
-  espacio_politico.movimiento, 
+  espacio_politico.peso_bomba, 
+  espacio_politico.cant_bomba,
   planes.id_planes, 
   contacto.telefono, 
   contacto.email, 
-  figura_juridica.r_social, 
-  laboral.grado_instruccion, 
-  laboral.profesion_oficio, 
-  laboral.trabaja, 
-  solicitud.t_asesoramiento, 
-  solicitud.t_solicitud");
+  figura_juridica.jerarquia, 
+  laboral.tipo_gas, 
+  laboral.tipo_boca");
   $this->db->from('public.personas, 
   public.planes, 
   public.planes_personas, 
   public.direccion, 
-  public.estados, 
-  public.municipios, 
-  public.parroquias, 
   public.espacio_politico, 
   public.contacto, 
   public.figura_juridica, 
-  public.laboral, 
-  public.solicitud');
+  public.laboral');
   $this->db->where( "personas.id_persona = planes_personas.key_id_personas AND
   personas.id_persona = direccion.id_persona_direccion AND
   personas.id_persona = contacto.id_persona_contacto AND
   personas.id_persona = figura_juridica.id_persona_figura AND
   personas.id_persona = laboral.id_persona_laboral AND
-  personas.id_persona = solicitud.id_persona_solicitud AND
   planes.id_planes = planes_personas.key_id_planes AND
-  direccion.estado = estados.id_estado AND
-  direccion.municipio = municipios.id_municipio AND
-  direccion.parroquia = parroquias.id_parroquia AND
   direccion.id_persona_direccion = espacio_politico.id_persona_espacio AND planes.id_planes='1'");
   $listado = $this->db->get();
     return $listado->result();
@@ -462,34 +446,20 @@ public function buscar($id){
     personas.sexo, 
     personas.f_nacimiento, 
     direccion.localidad, 
-    direccion.nombre_localidad, 
     direccion.direccion_exacta, 
-    estados.id_estado, 
-    municipios.id_municipio, 
-    parroquias.id_parroquia, 
-    estados.estado, 
-    municipios.municipio, 
-    parroquias.parroquia, 
     planes_personas.fecha_registro, 
-    espacio_politico.e_social, 
-    espacio_politico.n_social, 
-    espacio_politico.movimiento, 
+    espacio_politico.peso_bomba, 
+    espacio_politico.cant_bomba,
     planes.id_planes, 
     contacto.telefono, 
     contacto.email, 
-    figura_juridica.r_social, 
-    laboral.grado_instruccion, 
-    laboral.profesion_oficio, 
-    laboral.trabaja, 
-    solicitud.t_asesoramiento, 
-    solicitud.t_solicitud");
+    figura_juridica.jerarquia, 
+    laboral.tipo_gas, 
+    laboral.tipo_boca");
     $this->db->from('public.personas, 
     public.planes, 
     public.planes_personas, 
     public.direccion, 
-    public.estados, 
-    public.municipios, 
-    public.parroquias, 
     public.espacio_politico, 
     public.contacto, 
     public.figura_juridica, 
@@ -500,11 +470,7 @@ public function buscar($id){
     personas.id_persona = contacto.id_persona_contacto AND
     personas.id_persona = figura_juridica.id_persona_figura AND
     personas.id_persona = laboral.id_persona_laboral AND
-    personas.id_persona = solicitud.id_persona_solicitud AND
     planes.id_planes = planes_personas.key_id_planes AND
-    direccion.estado = estados.id_estado AND
-    direccion.municipio = municipios.id_municipio AND
-    direccion.parroquia = parroquias.id_parroquia AND
     direccion.id_persona_direccion = espacio_politico.id_persona_espacio ");
     $this->db->where('personas.id_persona',$id );
     $listado = $this->db->get();

@@ -101,14 +101,14 @@ public function p_industrial(){
 public function lista_personal(){
       $this->db->query("SELECT COUNT ('*')");
       $this->db->from(' public.planes_personas, public.figura_juridica');
-      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.r_social = 'PERSONAL' AND planes_personas.key_id_planes='1'");
+      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.jerarquia = 'PERSONAL' AND planes_personas.key_id_planes='1'");
         $aragua = $this->db->get();
         return $aragua->result();
  }
  public function lista_upf(){
   $this->db->query("SELECT COUNT ('*')");
       $this->db->from(' public.planes_personas, public.figura_juridica');
-      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.r_social = 'UPF' AND planes_personas.key_id_planes='1'");
+      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.jerarquia = 'UPF' AND planes_personas.key_id_planes='1'");
         $aragua = $this->db->get();
         return $aragua->result();
   $aragua = $this->db->get();
@@ -117,14 +117,14 @@ public function lista_personal(){
 public function lista_eps(){
   $this->db->query("SELECT COUNT ('*')");
       $this->db->from(' public.planes_personas, public.figura_juridica');
-      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.r_social = 'EPS' AND planes_personas.key_id_planes='1'");
+      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.jerarquia = 'EPS' AND planes_personas.key_id_planes='1'");
         $aragua = $this->db->get();
         return $aragua->result();
  }
  public function lista_coop(){
   $this->db->query("SELECT COUNT ('*')");
       $this->db->from(' public.planes_personas, public.figura_juridica');
-      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.r_social = 'COOPERATIVA' AND planes_personas.key_id_planes='1'");
+      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.jerarquia = 'COOPERATIVA' AND planes_personas.key_id_planes='1'");
         $aragua = $this->db->get();
         return $aragua->result();
   $aragua = $this->db->get();
@@ -133,14 +133,14 @@ public function lista_eps(){
  public function lista_ca(){
   $this->db->query("SELECT COUNT ('*')");
       $this->db->from(' public.planes_personas, public.figura_juridica');
-      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.r_social = 'COMPAÑIA ANONIMA' AND planes_personas.key_id_planes='1'");
+      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.jerarquia = 'COMPAÑIA ANONIMA' AND planes_personas.key_id_planes='1'");
         $aragua = $this->db->get();
         return $aragua->result();
  }
   public function lista_tecnologico(){
   $this->db->query("SELECT COUNT ('*')");
       $this->db->from(' public.planes_personas, public.figura_juridica');
-      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.r_social = 'COMPAÑIA ANONIMA' AND planes_personas.key_id_planes='1'");
+      $this->db->where("planes_personas.key_id_personas = figura_juridica.id_persona_figura AND figura_juridica.jerarquia = 'COMPAÑIA ANONIMA' AND planes_personas.key_id_planes='1'");
         $aragua = $this->db->get();
         return $aragua->result();
  }
